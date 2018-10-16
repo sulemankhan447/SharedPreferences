@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/ivUser"
+    android:src="@drawable/user"
+    android:layout_width="match_parent"
+    android:layout_height="200dp" />
+<TextView
+    android:id="@+id/tvUsername"
+    android:layout_below="@+id/ivUser"
+    android:text="Username"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textSize="25sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <EditText
+        android:background="@drawable/border_bottom"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:hint="Suleman Khan"
+        android:layout_below="@+id/tvUsername"
+        android:id="@+id/edtUsername"
+        android:layout_height="60dp"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        />
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/edtUsername"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textStyle="bold"
+        android:drawablePadding="5dp"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:hint="***********"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvPassword"
+        android:background="@drawable/border_bottom"
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edtPassword"
+        android:id="@+id/btnLogin"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/btnLogin"
+        android:text="Forgot Password ?"
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
