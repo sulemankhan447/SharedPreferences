@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SharedPreferences</string>
+    <string name="after_login_msg">You are Logged in Now,Your Login Status will be saved in Shared Prefernces,So Next Time You Will Directly visit Dashboard</string>
 </resources>
